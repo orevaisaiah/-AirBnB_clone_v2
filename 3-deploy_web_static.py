@@ -6,8 +6,9 @@ from fabric.api import local
 from fabric.api import put
 from fabric.api import run
 
-env.hosts = ['100.25.19.204', '54.157.159.85']
-
+env.hosts = ['18.209.225.232', '100.25.202.108']
+env.user = 'ubuntu'
+env.key_filename = '~/.ssh/id_rsa'
 
 def do_pack():
     """Create a tar gzipped archive of the directory web_static."""
